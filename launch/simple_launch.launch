@@ -1,0 +1,9 @@
+
+<launch>
+
+  <arg name="arg_name" default="$(find [name_of_package])/path"/>
+
+  <!-- Run the node -->
+  <node  pkg="package_name" type="file_name.py" name="node_name" args="$(arg arg_name)" />
+
+</launch>
